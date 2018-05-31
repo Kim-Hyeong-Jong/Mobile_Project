@@ -18,7 +18,8 @@ public class Login extends AppCompatActivity implements loginFragment.OnCreateCl
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.login);
+        setContentView(R.layout.login_main);
+
         if(findViewById(R.id.login_main) != null){
             if(savedInstanceState != null){
                 return;
@@ -32,7 +33,6 @@ public class Login extends AppCompatActivity implements loginFragment.OnCreateCl
 
     @Override
     public void CreateSelected() {
-        Log.v("success","success");
         createFragment newFragment = new createFragment();
         FragmentManager fm = getFragmentManager();
         FragmentTransaction fragmentTransaction = fm.beginTransaction();

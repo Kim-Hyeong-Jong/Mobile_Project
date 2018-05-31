@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "837442300690",
+    "firebase_url": "https://mobileproject-dd13c.firebaseio.com",
+    "project_id": "mobileproject-dd13c",
+    "storage_bucket": "mobileproject-dd13c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:837442300690:android:ee8a2d28c51b266a",
+        "android_client_info": {
+          "package_name": "bangbanggokgok.com.com.com.mobile_project"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "837442300690-uksksc3nr5fsfl77kmau3vtana54r0j4.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "837442300690-uksksc3nr5fsfl77kmau3vtana54r0j4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA849iygQsOWpCcOH5kzYtG6uxpfQgKK8c"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
