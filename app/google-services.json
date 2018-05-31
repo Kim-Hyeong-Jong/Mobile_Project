@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "837442300690-ke07046pgt44k6q294gira50dmigg9ji.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "bangbanggokgok.com.com.com.mobile_project",
+            "certificate_hash": "ff349b4c774aafb795ecddedde791658dc61a172"
+          }
+        },
+        {
           "client_id": "837442300690-uksksc3nr5fsfl77kmau3vtana54r0j4.apps.googleusercontent.com",
           "client_type": 3
         },
@@ -33,8 +41,13 @@
           "status": 1
         },
         "appinvite_service": {
-          "status": 1,
-          "other_platform_oauth_client": []
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "837442300690-uksksc3nr5fsfl77kmau3vtana54r0j4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         },
         "ads_service": {
           "status": 2
