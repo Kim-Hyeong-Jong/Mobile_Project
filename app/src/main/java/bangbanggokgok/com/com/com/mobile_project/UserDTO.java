@@ -9,14 +9,9 @@ import java.util.ArrayList;
 public class UserDTO {
     public  String name;
     public  String email;
-    public  ArrayList<Integer> info = null;
 
     public UserDTO(String name, String email){
         this.name = name;
         this.email = email;
     }
-    public void addInfo(int num){
-        info.add(num);
-    }
-
 }
