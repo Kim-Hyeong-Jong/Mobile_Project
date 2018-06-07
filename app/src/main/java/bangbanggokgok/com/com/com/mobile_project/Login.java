@@ -34,6 +34,7 @@ public class Login extends AppCompatActivity implements loginFragment.OnCreateCl
     @Override
     public void CreateSelected() {
         createFragment newFragment = new createFragment();
+        newFragment.setListener(this);
         FragmentManager fm = getFragmentManager();
         FragmentTransaction fragmentTransaction = fm.beginTransaction();
         fragmentTransaction.replace(R.id.login_main,newFragment);
