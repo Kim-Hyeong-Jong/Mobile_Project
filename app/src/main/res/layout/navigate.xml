@@ -28,16 +28,6 @@
             app:srcCompat="@drawable/close" />
 
         <TextView
-            android:id="@+id/email_info"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:gravity="center"
-            android:text="e-mail"
-            android:textColor="#A4BABA"
-            android:textSize="30dp" />
-
-        <TextView
             android:id="@+id/name_info"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -46,6 +36,16 @@
             android:text="name"
             android:textColor="#A4BABA"
             android:textSize="30dp" />
+
+        <TextView
+            android:id="@+id/email_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="e-mail"
+            android:textColor="#A4BABA"
+            android:textSize="20dp" />
 
     </LinearLayout>
 
