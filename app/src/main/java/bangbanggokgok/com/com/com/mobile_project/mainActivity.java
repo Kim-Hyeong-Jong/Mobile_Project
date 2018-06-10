@@ -1,12 +1,14 @@
 package bangbanggokgok.com.com.com.mobile_project;
 
-import android.app.Fragment;
-import android.app.FragmentManager;
-import android.app.FragmentTransaction;
+
+
 import android.content.Intent;
 import android.media.Image;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentTransaction;
+import android.support.v4.app.FragmentManager;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
@@ -46,11 +48,11 @@ public class mainActivity extends AppCompatActivity implements mainMethod{
         navigate = findViewById(R.id.navigate);
         navigate_btn = findViewById(R.id.navigate_btn);
         convert = findViewById(R.id.convert);
-        final GoogleMap googleMap = new GoogleMap();
+        final MapFragment googleMap = new MapFragment();
         final InfoList infoList = new InfoList();
         final Navigate navigateFragment = new Navigate();
         navigateFragment.setListener(this);
-        getFragmentManager().beginTransaction().add(R.id.navigate,navigateFragment).commit();
+        getSupportFragmentManager().beginTransaction().add(R.id.navigate,navigateFragment).commit();
         navigate.setVisibility(View.INVISIBLE);
         navigate_btn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -58,7 +60,7 @@ public class mainActivity extends AppCompatActivity implements mainMethod{
                     navigate.setVisibility(View.VISIBLE);
             }
         });
-        getFragmentManager().beginTransaction().add(R.id.container,googleMap).commit();
+        getSupportFragmentManager().beginTransaction().add(R.id.container,googleMap).commit();
         change = 0;
         convert.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -71,7 +73,7 @@ public class mainActivity extends AppCompatActivity implements mainMethod{
                     fragment = googleMap;
                     change = 0;
                 }
-                FragmentManager fm = getFragmentManager();
+                FragmentManager fm = getSupportFragmentManager();
                 FragmentTransaction ft = fm.beginTransaction();
                 ft.replace(R.id.container,fragment).commit();
             }

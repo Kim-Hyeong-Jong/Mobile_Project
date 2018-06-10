@@ -1,7 +1,7 @@
 package bangbanggokgok.com.com.com.mobile_project;
 
-import android.app.FragmentManager;
-import android.app.FragmentTransaction;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -26,7 +26,7 @@ public class Login extends AppCompatActivity implements loginFragment.OnCreateCl
             }
             final loginFragment loginFragment = new loginFragment();
             loginFragment.setCreate(this);
-            getFragmentManager().beginTransaction().add(R.id.login_main, loginFragment).commit();
+            getSupportFragmentManager().beginTransaction().add(R.id.login_main, loginFragment).commit();
         }
 
     }
@@ -35,7 +35,7 @@ public class Login extends AppCompatActivity implements loginFragment.OnCreateCl
     public void CreateSelected() {
         createFragment newFragment = new createFragment();
         newFragment.setListener(this);
-        FragmentManager fm = getFragmentManager();
+        FragmentManager fm = getSupportFragmentManager();
         FragmentTransaction fragmentTransaction = fm.beginTransaction();
         fragmentTransaction.replace(R.id.login_main,newFragment);
         fragmentTransaction.addToBackStack(null);
