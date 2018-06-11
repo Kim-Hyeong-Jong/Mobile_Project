@@ -46,7 +46,7 @@ public class mainActivity extends AppCompatActivity implements mainMethod{
         navigate = findViewById(R.id.navigate);
         navigate_btn = findViewById(R.id.navigate_btn);
         convert = findViewById(R.id.convert);
-        final GoogleMap googleMap = new GoogleMap();
+        final googlemapFrag gF = new googlemapFrag();
         final InfoList infoList = new InfoList();
         final Navigate navigateFragment = new Navigate();
         navigateFragment.setListener(this);
@@ -58,7 +58,7 @@ public class mainActivity extends AppCompatActivity implements mainMethod{
                     navigate.setVisibility(View.VISIBLE);
             }
         });
-        getFragmentManager().beginTransaction().add(R.id.container,googleMap).commit();
+        getFragmentManager().beginTransaction().add(R.id.container,gF).commit();
         change = 0;
         convert.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -68,7 +68,7 @@ public class mainActivity extends AppCompatActivity implements mainMethod{
                     fragment = infoList;
                     change = 1;
                 }else{
-                    fragment = googleMap;
+                    fragment = gF;
                     change = 0;
                 }
                 FragmentManager fm = getFragmentManager();
