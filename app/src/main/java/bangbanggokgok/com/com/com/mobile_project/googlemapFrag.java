@@ -11,6 +11,10 @@ import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.MapView;
 import com.google.android.gms.maps.OnMapReadyCallback;
 
+
+///////////////////////////////////////
+//GoogleMap 자바소스가 아마 이미 구글 자체적으로 이름이 겹쳐서 새로 만든 fragment입니당
+
 public class googlemapFrag extends Fragment implements OnMapReadyCallback {
 
     private MapView mapView = null;
